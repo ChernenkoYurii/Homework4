@@ -1,0 +1,12 @@
+.gallery {
+	display: flex;
+	padding: 0 5%;
+	flex-wrap: wrap;
+	 .gallery_img {
+	 	display: flex;
+	 	flex-direction: column;
+		width: 50%;
+		height: auto;
+
+	}
+}
