@@ -1,12 +1,33 @@
 .gallery {
+	background-color: $color_gallery;
+}
+.galleryContent {
 	display: flex;
+	justify-content: space-between;
 	padding: 0 5%;
 	flex-wrap: wrap;
 	 .gallery_img {
 	 	display: flex;
 	 	flex-direction: column;
-		width: 50%;
-		height: auto;
-
+	 	align-items: center;
+		width: 48%;
+		margin-bottom: 5%;
+		img {
+			max-width: 100%;
+			width: 100%;
+			padding-bottom: 5%;
+		}
+		.galleryButt {
+			padding: 2% 20%;
+			background-color: $color_but_bg;
+			border-radius: 40px;
+			display: inline-block;
+   			vertical-align: middle;
+   			transition: all 0.8s ease;
+   			&:hover {
+   				background-color: $color_h;
+   			}
+			}
+		
 	}
 }
