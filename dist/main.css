@@ -15,7 +15,8 @@
 .conteiner p {
   color: #6d6d6d;
   font-size: 1.125rem;
-  line-height: 1.5rem; }
+  line-height: 1.5rem;
+  font-family: "Dosis"; }
 
 .conteiner .holder {
   display: flex;
@@ -45,7 +46,8 @@
   padding: 0 5%; }
   .section .content_body {
     padding: 5% 20% 5% 10%;
-    background-color: #f6fcff; }
+    background-color: #f6fcff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
   .section .content_img {
     height: 100%; }
     .section .content_img img {
@@ -88,7 +90,8 @@
       width: 100%; }
 
 .gallery {
-  background-color: #f7f9ee; }
+  background-color: #f7f9ee;
+  text-align: center; }
 
 .galleryContent {
   display: flex;
@@ -103,15 +106,17 @@
     padding-bottom: 5%; }
     .galleryContent .galleryBlock .gallery_img {
       position: relative;
-      width: 100%; }
+      width: 100%;
+      height: 100%;
+      overflow: hidden; }
       .galleryContent .galleryBlock .gallery_img img {
         max-width: 100%;
-        width: 100%; }
+        width: 100%;
+        transition: all 0.8s ease; }
       .galleryContent .galleryBlock .gallery_img .bgBackground {
         display: flex;
         align-items: center;
-        padding: 0 30%;
-        text-align: center;
+        padding: 5% 25%;
         position: absolute;
         background: rgba(21, 51, 68, 0.6);
         width: 100%;
@@ -119,21 +124,43 @@
         opacity: 0;
         top: 0;
         transition: all 0.8s ease; }
-        .galleryContent .galleryBlock .gallery_img .bgBackground p {
-          color: #fff; }
-      .galleryContent .galleryBlock .gallery_img:hover .bgBackground {
-        opacity: 1; }
-    .galleryContent .galleryBlock .galleryButt {
-      padding: 2% 20%;
-      background-color: #97b621;
-      border-radius: 40px;
-      display: inline-block;
-      vertical-align: middle;
-      transition: all 0.8s ease; }
-      .galleryContent .galleryBlock .galleryButt:hover {
-        background-color: #7ea2b3; }
-    .galleryContent .galleryBlock h2 {
-      margin-top: 5%; }
+      .galleryContent .galleryBlock .gallery_img a {
+        color: #fff;
+        font-family: "Dosis";
+        text-decoration: none;
+        font-size: 1.125rem;
+        line-height: 2.1875rem; }
+    .galleryContent .galleryBlock:hover .bgBackground {
+      opacity: 1; }
+    .galleryContent .galleryBlock:hover img {
+      transform: scale(1.2); }
+  .galleryContent .galleryButt {
+    padding: 2% 20%;
+    background-color: #97b621;
+    border-radius: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    transition: all 0.8s ease; }
+    .galleryContent .galleryButt .butt {
+      font-family: "Dosis";
+      font-weight: 700;
+      font-size: 0.8125rem;
+      line-height: 1.375rem; }
+    .galleryContent .galleryButt:hover {
+      background-color: #7ea2b3; }
+  .galleryContent h2 {
+    margin-top: 5%;
+    font-size: 1.5rem;
+    line-height: 1.875rem; }
+
+@media (min-width: 768px) {
+  .galleryContent {
+    flex-wrap: nowrap; }
+    .galleryContent .galleryBlock {
+      width: 23%; }
+      .galleryContent .galleryBlock .gallery_img a {
+        font-size: none;
+        line-height: none; } }
 
 * {
   margin: 0;
