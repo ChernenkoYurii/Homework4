@@ -44,15 +44,14 @@
 
 .section {
   padding: 0 5%; }
+  .section .bodyBackground, .section .bodyBackgroundLeft {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f6fcff; }
   .section .content_body {
-    padding: 5% 20% 5% 10%;
-    background-color: #f6fcff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
-  .section .content_img {
-    height: 100%; }
-    .section .content_img img {
-      max-width: 100%;
-      width: 100%; }
+    padding: 5% 20% 5% 10%; }
+  .section .content_img img {
+    max-width: 100%;
+    width: 100%; }
   .section .central_button {
     display: flex;
     justify-content: center;
@@ -88,6 +87,36 @@
       font-size: 1rem;
       line-height: 1.375rem;
       width: 100%; }
+
+@media (min-width: 768px) {
+  .content_section {
+    display: flex;
+    position: relative; }
+    .content_section .content_img {
+      width: 50%;
+      margin-bottom: 5%; }
+    .content_section .content_body {
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%; }
+    .content_section .bodyBackground {
+      margin-top: 4%;
+      width: 55%;
+      height: 80%;
+      left: 45%;
+      z-index: 1;
+      position: absolute; }
+    .content_section .bodyBackgroundLeft {
+      margin-top: 4%;
+      width: 55%;
+      height: 80%;
+      left: 0;
+      z-index: 1;
+      position: absolute; }
+  div.content_section:nth-child(2n) {
+    flex-direction: row-reverse; } }
 
 .gallery {
   background-color: #f7f9ee;
@@ -128,8 +157,8 @@
         color: #fff;
         font-family: "Dosis";
         text-decoration: none;
-        font-size: 1.125rem;
-        line-height: 2.1875rem; }
+        font-size: none;
+        line-height: none; }
     .galleryContent .galleryBlock:hover .bgBackground {
       opacity: 1; }
     .galleryContent .galleryBlock:hover img {
@@ -159,8 +188,8 @@
     .galleryContent .galleryBlock {
       width: 23%; }
       .galleryContent .galleryBlock .gallery_img a {
-        font-size: none;
-        line-height: none; } }
+        font-size: 1.125rem;
+        line-height: 2.1875rem; } }
 
 * {
   margin: 0;

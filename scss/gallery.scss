@@ -41,8 +41,9 @@
 				color: $color_button;
 				font-family: "Dosis";
 				text-decoration: none;
-				font-size: 1.125rem;
-				line-height: 2.1875rem;
+				
+				font-size: none;
+				line-height: none;
 			}
 		}
 		&:hover {
@@ -84,8 +85,8 @@
 		.galleryBlock {
 			width: 23%;
 			.gallery_img a {
-				font-size: none;
-				line-height: none;
+				font-size: 1.125rem;
+				line-height: 2.1875rem;
 			}
 		}
 	}
