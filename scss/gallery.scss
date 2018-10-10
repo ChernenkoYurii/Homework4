@@ -41,19 +41,19 @@
 				color: $color_button;
 				font-family: "Dosis";
 				text-decoration: none;
-				
 				font-size: none;
 				line-height: none;
 			}
+			&:hover {
+				.bgBackground {
+				 opacity: 1;
+			 }
+			 img {
+					 transform: scale(1.2);
+				 }
+			}
 		}
-		&:hover {
-   				.bgBackground {
-					opacity: 1;
-				}
-				img {
-						transform: scale(1.2);
-					}
-   			}
+		
 	}
 	.galleryButt {
 			padding: 2% 20%;

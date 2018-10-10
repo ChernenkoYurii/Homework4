@@ -159,10 +159,10 @@
         text-decoration: none;
         font-size: none;
         line-height: none; }
-    .galleryContent .galleryBlock:hover .bgBackground {
-      opacity: 1; }
-    .galleryContent .galleryBlock:hover img {
-      transform: scale(1.2); }
+      .galleryContent .galleryBlock .gallery_img:hover .bgBackground {
+        opacity: 1; }
+      .galleryContent .galleryBlock .gallery_img:hover img {
+        transform: scale(1.2); }
   .galleryContent .galleryButt {
     padding: 2% 20%;
     background-color: #97b621;
