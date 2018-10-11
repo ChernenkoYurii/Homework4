@@ -53,13 +53,10 @@
 	}
 }
 .section {
-	.bodyBackground, .bodyBackgroundLeft {
-		background-color: $color_bg;
-	}
-}
-.section {
 	.bodyBackground {
 		box-shadow: -10px 13px 35px 4px rgba(0,0,0,0.2);
+		background-color: $color_bg;
+		margin-bottom: 5%;
 	}
 	.content_body {
 				padding: 5% 20% 5% 10%;

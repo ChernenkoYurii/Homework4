@@ -43,11 +43,10 @@
     .conteiner .butt:hover {
       background-color: #7ea2b3; }
 
-.section .bodyBackground, .section .bodyBackgroundLeft {
-  background-color: #f6fcff; }
-
 .section .bodyBackground {
-  box-shadow: -10px 13px 35px 4px rgba(0, 0, 0, 0.2); }
+  box-shadow: -10px 13px 35px 4px rgba(0, 0, 0, 0.2);
+  background-color: #f6fcff;
+  margin-bottom: 5%; }
 
 .section .content_body {
   padding: 5% 20% 5% 10%; }
