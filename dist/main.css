@@ -1,92 +1,84 @@
-.conteiner h1, .conteiner h2 {
-  color: #7ea2b3;
-  text-transform: uppercase;
-  font-family: "Oswald"; }
-
-.conteiner h1 {
-  font-size: 2.5rem;
-  line-height: 3.125rem; }
-
-.conteiner h2 {
-  padding-bottom: 3%;
-  font-size: 1.5rem;
-  line-height: 1.875rem; }
-
-.conteiner p {
-  color: #6d6d6d;
-  font-size: 1.125rem;
-  line-height: 1.5rem;
-  font-family: "Dosis"; }
-
-.conteiner .holder {
-  display: flex;
-  justify-content: center;
-  padding: 2% 5%; }
-
-.conteiner .butt {
-  color: #fff;
-  text-decoration: none;
-  font-family: "Oswald";
-  font-size: 1rem;
-  line-height: 1.375rem; }
-
-.conteiner .button {
-  margin-top: 5%; }
-  .conteiner .button span {
-    padding: 2% 3%;
-    background-color: #97b621;
-    border-radius: 40px;
+.conteiner {
+  max-width: 1140px;
+  margin: 0 auto; }
+  .conteiner h1, .conteiner h2 {
+    color: #7ea2b3;
+    font-family: "Oswald"; }
+  .conteiner h1 {
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+    text-transform: uppercase; }
+  .conteiner h2 {
+    padding-bottom: 3%;
+    font-size: 1.5rem;
+    line-height: 1.875rem; }
+  .conteiner p {
+    color: #6d6d6d;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-family: "Dosis"; }
+  .conteiner img {
     display: inline-block;
-    vertical-align: middle;
-    transition: all 0.8s ease; }
-    .conteiner .button span:hover {
-      background-color: #7ea2b3; }
-
-.section {
-  padding: 0 5%; }
-  .section .bodyBackground, .section .bodyBackgroundLeft {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: #f6fcff; }
-  .section .content_body {
-    padding: 5% 20% 5% 10%; }
-  .section .content_img img {
+    vertical-align: top;
     max-width: 100%;
-    width: 100%; }
-  .section .central_button {
+    width: 100%;
+    transition: all 0.8s ease; }
+  .conteiner .holder {
     display: flex;
     justify-content: center;
-    margin-top: 5%;
-    margin-bottom: 5%; }
-    .section .central_button .btn {
-      padding: 2% 3%;
-      border-radius: 40px;
-      border: 2px solid #97b621;
-      display: inline-block;
-      vertical-align: middle;
-      transition: all 0.8s ease; }
-      .section .central_button .btn:hover {
-        background-color: #7ea2b3; }
-        .section .central_button .btn:hover .central_butt {
-          color: #fff; }
-        .section .central_button .btn:hover .arr {
-          color: #fff;
-          border-left: 5px solid #fff; }
-      .section .central_button .btn .arr {
-        vertical-align: middle;
-        display: inline-block;
-        margin: 0 5px;
-        width: 0;
-        height: 0;
-        border-left: 5px solid #97b621;
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent; }
-    .section .central_button .central_butt {
-      text-decoration: none;
-      color: #97b621;
+    padding: 2% 5%; }
+  .conteiner .butt, .conteiner .centralButt {
+    text-decoration: none;
+    border-radius: 40px;
+    transition: all 0.8s ease;
+    text-transform: uppercase; }
+  .conteiner .button {
+    margin-top: 5%; }
+    .conteiner .button .butt {
+      color: #fff;
+      background-color: #97b621;
       font-family: "Oswald";
       font-size: 1rem;
       line-height: 1.375rem;
-      width: 100%; }
+      padding: 2% 3%; }
+      .conteiner .button .butt:hover {
+        background-color: #7ea2b3; }
+
+.section .bodyBackground, .section .bodyBackgroundLeft {
+  background-color: #f6fcff; }
+
+.section .bodyBackground {
+  box-shadow: -10px 13px 35px 4px rgba(0, 0, 0, 0.2); }
+
+.section .bodyBackgroundLeft {
+  background-color: #f6fcff;
+  box-shadow: 10px 13px 35px 4px rgba(0, 0, 0, 0.2); }
+
+.section .content_body {
+  padding: 5% 20% 5% 10%; }
+
+.section .central_button {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  transition: all 0.8s ease; }
+  .section .central_button .centralButt {
+    padding: 2% 20%;
+    border: 2px solid #97b621;
+    font-family: "Oswald";
+    font-size: 1rem;
+    line-height: 1.375rem;
+    color: #97b621; }
+    .section .central_button .centralButt .arr:before {
+      margin-right: 10px;
+      content: "\27A4"; }
+    .section .central_button .centralButt:hover {
+      background-color: #97b621;
+      color: #fff;
+      border-color: #7ea2b3; }
+      .section .central_button .centralButt:hover .arr {
+        color: #fff; }
 
 @media (min-width: 768px) {
   .content_section {
@@ -138,10 +130,6 @@
       width: 100%;
       height: 100%;
       overflow: hidden; }
-      .galleryContent .galleryBlock .gallery_img img {
-        max-width: 100%;
-        width: 100%;
-        transition: all 0.8s ease; }
       .galleryContent .galleryBlock .gallery_img .bgBackground {
         display: flex;
         align-items: center;
@@ -163,24 +151,21 @@
         opacity: 1; }
       .galleryContent .galleryBlock .gallery_img:hover img {
         transform: scale(1.2); }
-  .galleryContent .galleryButt {
-    padding: 2% 20%;
+  .galleryContent .galleryButt .butt {
+    padding: 5% 40%;
     background-color: #97b621;
-    border-radius: 40px;
-    display: inline-block;
-    vertical-align: middle;
-    transition: all 0.8s ease; }
-    .galleryContent .galleryButt .butt {
-      font-family: "Dosis";
-      font-weight: 700;
-      font-size: 0.8125rem;
-      line-height: 1.375rem; }
-    .galleryContent .galleryButt:hover {
+    font-family: "Dosis";
+    font-weight: 700;
+    font-size: 0.8125rem;
+    line-height: 1.375rem;
+    color: #fff; }
+    .galleryContent .galleryButt .butt:hover {
       background-color: #7ea2b3; }
   .galleryContent h2 {
     margin-top: 5%;
     font-size: 1.5rem;
-    line-height: 1.875rem; }
+    line-height: 1.875rem;
+    margin-bottom: 5%; }
 
 @media (min-width: 768px) {
   .galleryContent {
