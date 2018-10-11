@@ -34,8 +34,6 @@
     transition: all 0.8s ease;
     text-transform: uppercase; }
   .conteiner .butt {
-    display: inline;
-    padding-top: 5%;
     color: #fff;
     background-color: #97b621;
     font-family: "Oswald";
@@ -51,21 +49,17 @@
 .section .bodyBackground {
   box-shadow: -10px 13px 35px 4px rgba(0, 0, 0, 0.2); }
 
-.section .bodyBackgroundLeft {
-  background-color: #f6fcff;
-  box-shadow: 10px 13px 35px 4px rgba(0, 0, 0, 0.2); }
-
 .section .content_body {
   padding: 5% 20% 5% 10%; }
 
 .section .central_button {
   display: flex;
   justify-content: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  transition: all 0.8s ease; }
+  margin: 10% auto;
+  transition: all 0.8s ease;
+  white-space: nowrap; }
   .section .central_button .centralButt {
-    padding: 2% 15%;
+    padding: 2% 10%;
     border: 2px solid #97b621;
     font-family: "Oswald";
     font-size: 1rem;
@@ -101,15 +95,16 @@
       left: 45%;
       z-index: 1;
       position: absolute; }
-    .content_section .bodyBackgroundLeft {
-      margin-top: 4%;
-      width: 55%;
-      height: 80%;
-      left: 0;
-      z-index: 1;
-      position: absolute; }
   div.content_section:nth-child(2n) {
-    flex-direction: row-reverse; } }
+    flex-direction: row-reverse; }
+  div.content_section:nth-child(2n) .bodyBackground {
+    margin-top: 4%;
+    width: 55%;
+    height: 80%;
+    left: 0;
+    z-index: 1;
+    position: absolute;
+    box-shadow: 10px 13px 35px 4px rgba(0, 0, 0, 0.2); } }
 
 .gallery {
   background-color: #f7f9ee;

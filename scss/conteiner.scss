@@ -41,8 +41,6 @@
    		text-transform: uppercase;	
 	}
 	.butt {
-		display: inline;
-		padding-top: 5%;
 		color: $color_button;
 		background-color: $color_but_bg;
 		font-family: "Oswald";
@@ -63,24 +61,17 @@
 	.bodyBackground {
 		box-shadow: -10px 13px 35px 4px rgba(0,0,0,0.2);
 	}
-}
-.section {
-	.bodyBackgroundLeft {
-		background-color: $color_bg;
-		box-shadow: 10px 13px 35px 4px rgba(0,0,0,0.2);
-	}	
-
 	.content_body {
 				padding: 5% 20% 5% 10%;
 			}	
 	.central_button {
 		display: flex;
 		justify-content: center;
-		margin-top: 5%;
-		margin-bottom: 5%;
+		margin: 10% auto;
 		transition: all 0.8s ease;
+		white-space: nowrap;
 		.centralButt {
-			padding: 2% 15%;
+			padding: 2% 10%;
 			border: 2px solid $color_but_bg;
 			font-family: "Oswald";
 			font-size: 1rem;
@@ -124,17 +115,17 @@
 			z-index: 1;
 			position: absolute;
 		}
-		.bodyBackgroundLeft {
-			margin-top: 4%;
-			width: 55%;
-			height: 80%;
-			left: 0;
-			z-index: 1;
-			position: absolute;
-		}
 	}
 	div.content_section:nth-child(2n) {
 		flex-direction: row-reverse;
 	}
-	
-  }
+	div.content_section:nth-child(2n) .bodyBackground{
+		margin-top: 4%;
+		width: 55%;
+		height: 80%;
+		left: 0;
+		z-index: 1;
+		position: absolute;
+		box-shadow: 10px 13px 35px 4px rgba(0,0,0,0.2);
+	}	
+}
