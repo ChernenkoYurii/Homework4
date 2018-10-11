@@ -35,7 +35,6 @@
 			a {
 				color: $color_button;
 				font-family: "Dosis";
-				text-decoration: none;
 				font-size: none;
 				line-height: none;
 			}
@@ -50,18 +49,21 @@
 		}
 		
 	}
-	.galleryButt .butt{
-				padding: 5% 40%;
-				background-color: $color_but_bg;
-				font-family: "Dosis";
-				font-weight: 700;
-				font-size: 0.8125rem;
-				line-height: 1.375rem;
-				color: $color_button;
-   			&:hover {
-   				background-color: $color_h;
-   			}
-			}
+	.galleryButt {
+		width: 100%;
+		.butt {
+			padding: 5% 30%;
+			background-color: $color_but_bg;
+			font-family: "Dosis";
+			font-weight: 700;
+			font-size: 0.8125rem;
+			line-height: 1.375rem;
+			color: $color_button;
+		   &:hover {
+			   background-color: $color_h;
+		   }
+		}
+	}
 	h2 {
 		margin-top: 5%;
 		font-size: 1.5rem;

@@ -20,6 +20,7 @@
 		font-size: 1.125rem;
 		line-height: 1.5rem;
 		font-family: "Dosis";
+		margin-bottom: 5%;
 	}
 	img {
 		display: inline-block;
@@ -39,18 +40,17 @@
    		transition: all 0.8s ease;
    		text-transform: uppercase;	
 	}
-	.button {
-		margin-top: 5%;
-		.butt {
-			color: $color_button;
-			background-color: $color_but_bg;
-			font-family: "Oswald";
-			font-size: 1rem;
-			line-height: 1.375rem;
-			padding: 2% 3%;
-			&:hover {
-				background-color: $color_h;
-			}
+	.butt {
+		display: inline;
+		padding-top: 5%;
+		color: $color_button;
+		background-color: $color_but_bg;
+		font-family: "Oswald";
+		font-size: 1rem;
+		line-height: 1.375rem;
+		padding: 2% 3%;
+		&:hover {
+			background-color: $color_h;
 		}
 	}
 }
@@ -80,7 +80,7 @@
 		margin-bottom: 5%;
 		transition: all 0.8s ease;
 		.centralButt {
-			padding: 2% 20%;
+			padding: 2% 15%;
 			border: 2px solid $color_but_bg;
 			font-family: "Oswald";
 			font-size: 1rem;
